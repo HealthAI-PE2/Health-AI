@@ -1,53 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Care Center</title>
     <link rel="stylesheet" href="style.css">
     <link rel="main" href="main.py">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
   </head>
 <body>
     <!-- Navbar -->
     
-    <nav class="navbar">
-        <table>
-            <td>
-                <img src="./Images/logo.jpg" style="width: 50px; height: 50px; border-radius: 30px; margin: 10px;" >
-            </td>
-            <td><a href="index.html" class="logo">Health AI</a></td>
-            <td><ul class="other-pages">
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
-                
-                
-              </ul></td>
-        </table>
-    </nav>
+    <header class="header">
+        <img src="images/logo.jpg" id="logo" alt="">
+
+        
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+
+            <a href="about.html">About</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </header>
 
 
 <!-- main form of page -->
-<h1 class="mt-4 my-4 text-center text-green ">Symptoms Based Medicine Recommended System</h1>
-<table>
-    <td>
-<h2 style="text-align: center; font-family: Poppins, sans-serif; font-weight: 300; font-style: normal;"> Our Webpage is a medicine recommended system that utilizes machine learning techniques to analyse input data and recommended the medicines to user based on their symptoms. Flask is used to build a user-friendly web interface where users can input their data and receive medicine recommendation. </h2>
-</td>
-<td>
-    <div class="card-image" style="background-image: url('./Images/A1.png');  background-size: cover;
-    background-position: center center;
-    height: 400px; /* adjust the height as needed */
-    border-radius: 5rem;
-    width: 40rem;
-    margin-right: 2rem;
-    margin-left: 0rem;
-    margin-top: 10px; "></div>
-</td>
-</table>
+
+
+        <div class="background-image">
+        <div class="background-content"> <h1>Symptoms Based Medicine <br> Recommended System</h1>
+        <p>Our Webpage is a medicine recommended system that utilizes machine learning techniques to analyse input data and recommended the medicines to user based on their symptoms. Flask is used to build a user-friendly web interface where users can input their data and receive medicine recommendation. </p>
+        <a href="#">Read more</a>
+     </div>
+ </div>
+
+
+
 <div class="container my-4 mt-4" style="background: transparent; color: black; border-radius: 15px; padding: 40px;">
     <form action="/predict" method="post">
         <div class="form-group">
@@ -56,7 +58,7 @@
 <div name="mysysms" id="transcription" style="color:black; margin-top: 5px;"> <table>
     <tr>
       <td>
-        <input type="text" class="form-control" style="position: relative; width: 1200px; background-color: #ADCCC3;" id="symptoms" name="symptoms" placeholder=" type systems such as itching, sleeping, aching etc" >
+        <input type="text" class="form-control" style="position: relative; width: 1200px; height:3rem; background-color: #ADCCC3;" id="symptoms" name="symptoms" placeholder=" type systems such as itching, sleeping, aching etc" >
       </td>
       <td>
         <button type="button" id="startSpeechRecognition" class="btn btn-primary" style="margin-left:5px;border:1px solid white; border-radius:20px; background-color: white; color: white;  position: relative; margin-top: 5px; margin-right: 10px; margin-left: 10px;" >
@@ -195,6 +197,7 @@
         </div>
     </div>
 
+    
 
 
         <script>
@@ -225,7 +228,43 @@
     <iframe src="about.html" style="border: none; width: 100%; height: 800px; overflow: auto;"></iframe>
     <iframe src="blog.html" style="border: none; width: 100%; height: 800px; overflow: auto;"></iframe>
     <iframe src="contact.html" style="border: none; width: 100%; height: 800px; overflow: auto;"></iframe>
-    <iframe src="footer.html" style="border: none; width: 100%; height: 100px;"></iframe>
+
+
+    <div class="footer">
+        <div class="main-footer">
+            <div class="inner-footer">
+                <img src="images/logo.png" alt="">
+            </div>
+    
+            <div class="inner-footer">
+                <h2>Contact</h2>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+    
+            <div class="inner-footer">
+                <h2>Social Accounts</h2>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+    
+            <div class="inner-footer">
+                <h2>Quick Links</h2>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
