@@ -22,16 +22,16 @@ app = Flask(__name__)
 
 
 # load databasedataset===================================
-sym_des = pd.read_csv("./datasets/.ipynb_checkpoints/symtoms_df.csv")
-precautions = pd.read_csv("./datasets/.ipynb_checkpoints/precautions_df.csv")
-workout = pd.read_csv("./datasets/.ipynb_checkpoints/workout_df.csv")
-description = pd.read_csv("./datasets/.ipynb_checkpoints/description.csv")
-medications = pd.read_csv("./datasets/.ipynb_checkpoints/medications.csv")
-diets = pd.read_csv("./datasets/.ipynb_checkpoints/diets.csv")
+sym_des = pd.read_csv("./datasets/symtoms_df.csv")
+precautions = pd.read_csv("./datasets/precautions_df.csv")
+workout = pd.read_csv("./datasets/workout_df.csv")
+description = pd.read_csv("./datasets/description.csv")
+medications = pd.read_csv("./datasets/medications.csv")
+diets = pd.read_csv("./datasets/diets.csv")
 
 
 # load model===========================================
-svc = pickle.load(open('./models/.ipynb_checkpoints/svc.pkl','rb'))
+svc = pickle.load(open('./models/svc.pkl','rb'))
 
 
 #============================================================
@@ -108,17 +108,17 @@ def home():
 
 
 # about view funtion and path
-@app.route('/about')
+@app.route('/templates/about.html')
 def about():
     return render_template('about.html')
 
 # about view funtion and path
-@app.route('/blog')
+@app.route('/templates/blog.html')
 def blog():
     return render_template('blog.html')
 
 # contact view funtion and path
-@app.route('/contact')
+@app.route('/templates/contact.html')
 def contact():
     return render_template('contact.html')
 
